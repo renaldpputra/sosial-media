@@ -10,3 +10,4 @@ sudo mysql -u root -e "create database dbsosmed";
 sudo mysql -u root dbsosmed < /var/www/html/dump.sql;
 sudo mysql -u root -e "create user 'devopscilsy'@'localhost' identified by '1234567890'";
 sudo mysql -u root -e "grant all privileges on *.* to 'devopscilsy'@'localhost'";
+sudo systemctl restart apache2;
